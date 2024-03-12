@@ -46,7 +46,7 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     private String getDate() {
-        LocalDate localDate = LocalDate.now().plusDays(3);
+        LocalDate localDate = LocalDate.now();
         int day = localDate.getDayOfMonth();
         String month = localDate.getMonth().toString();
         int year = localDate.getYear();

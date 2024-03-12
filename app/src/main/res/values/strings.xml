@@ -4,4 +4,6 @@
     <string name="app_moto">Your weather partner and companion</string>
     <string name="town_placeholder">Port Louis</string>
     <string name="date_placeholder">12th March, 2024</string>
+    <string name="overview">Overview</string>
+    <string name="details">Details</string>
 </resources>
