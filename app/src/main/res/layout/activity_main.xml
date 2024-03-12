@@ -33,9 +33,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/TV_appName"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:textColor="@android:color/darker_gray"
-        android:text="Your weather partner and companion"
+        android:text="@string/app_moto"
         android:textAlignment="center"
         android:textSize="17sp" />
 
