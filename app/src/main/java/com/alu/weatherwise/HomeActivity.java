@@ -17,7 +17,7 @@ import java.time.format.DateTimeFormatter;
 public class HomeActivity extends AppCompatActivity {
 
     ImageView toProfile;
-    TextView townName, currentDate;
+    TextView townName, currentDate, overview, details;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +36,14 @@ public class HomeActivity extends AppCompatActivity {
         this.toProfile.setOnClickListener(v -> Toast.makeText(this, "Redirecting to the profile page", Toast.LENGTH_LONG).show());
         this.townName.setText("Nairobi");
         this.currentDate.setText(getDate());
+        this.details.setOnClickListener(v -> {
+            this.details.setBackground(getDrawable(R.drawable.active_tab_background));
+            this.overview.setBackgroundColor(getColor(R.color.transparent));
+        });
+        this.overview.setOnClickListener(v -> {
+            this.overview.setBackground(getDrawable(R.drawable.active_tab_background));
+            this.details.setBackgroundColor(getColor(R.color.transparent));
+        });
 
     }
 
@@ -43,14 +51,12 @@ public class HomeActivity extends AppCompatActivity {
         this.toProfile = findViewById(R.id.IV_toProfile);
         this.townName = findViewById(R.id.TV_townName);
         this.currentDate = findViewById(R.id.TV_currentDate);
+        this.overview = findViewById(R.id.TV_overview);
+        this.details = findViewById(R.id.TV_details);
     }
 
     private String getDate() {
         LocalDate localDate = LocalDate.now();
-        int day = localDate.getDayOfMonth();
-        String month = localDate.getMonth().toString();
-        int year = localDate.getYear();
-
-        return day + " " + month + ", " + year;
+        return localDate.getDayOfMonth() + " " + localDate.getMonth() + ", " + localDate.getYear();
     }
 }
