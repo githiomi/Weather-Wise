@@ -24,8 +24,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // Handler to add splash screen delay
-        new Handler().postDelayed( () -> {
-            startActivity(new Intent(MainActivity.this, ));
-            }, 3000);
+        new Handler().postDelayed(() -> {
+            startActivity(new Intent(MainActivity.this, HomeActivity.class));
+
+            finish();
+
+        }, 3000);
     }
 }
