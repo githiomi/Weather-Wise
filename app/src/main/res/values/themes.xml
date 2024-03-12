@@ -5,5 +5,5 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.WeatherWise" parent="Base.Theme.WeatherWise"/>
+    <style name="Theme.WeatherWise" parent="Base.Theme.WeatherWise" />
 </resources>

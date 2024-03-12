@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_moto">Your weather partner and companion</string>
+    <string name="town_placeholder">Port Louis</string>
+    <string name="date_placeholder">12th March, 2024</string>
 </resources>

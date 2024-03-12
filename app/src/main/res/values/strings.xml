@@ -2,4 +2,6 @@
     <string name="app_name">Weather Wise</string>
     <string name="br_app_name">Weather\nWise</string>
     <string name="app_moto">Your weather partner and companion</string>
+    <string name="town_placeholder">Port Louis</string>
+    <string name="date_placeholder">12th March, 2024</string>
 </resources>
