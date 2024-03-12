@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Weather Wise</string>
+    <string name="br_app_name">Weather\nWise</string>
 </resources>
